@@ -1,0 +1,201 @@
+html, body{
+    height: 100%;
+}
+h1,h2,h3,h4,h5{
+    font-family: 'Insanibu';
+}
+/* navbar */
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+/* /navbar */
+
+.hero{
+    background-image: url("../images/header-bg.png");
+    background-size: cover;
+    background-position: center center;
+}
+.hero img{
+    height: 100px;
+}
+.hero .foot-header{
+    margin-top:-50px;
+}
+.framework .title-framework{
+    max-width: 700px;
+}
+.framework .card{
+    color:#fff; height:400px;
+    margin-top: -130px;
+}
+.service .card .card-body img{
+    position:absolute; right:0; bottom:0;
+}
+.stories .row{
+    padding-top:160px;
+    padding-bottom: 160px;
+}
+.stories .card{
+    height: 250px;
+}
+.bg-stories-1{
+    background-image: url("../images/bg-stories-1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.bg-stories-2{
+    background-image: url("../images/bg-stories-2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.bg-stories-3{
+    background-image: url("../images/bg-stories-3.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.stories .card .card-body .stories-text {
+    max-width: 400px;
+    position:absolute; 
+    bottom:10px;
+}
+.stories .card .card-body .stories-text h1{
+    color: #fff;
+    font-size: 1.5rem;
+}
+.drop-problem {
+    background-image: url("../images/bg-drop.png");
+    background-size: cover;
+    background-position: center center;
+}
+.first-foot .first-foot-content ul li{
+    list-style: none;
+}
+.first-foot .first-foot-content ul li a{
+    list-style: none;
+    color: #fff;
+    text-decoration: none;
+    vertical-align: 10px;
+}
+.first-foot .first-foot-content ul li a:hover{
+    list-style: none;
+    color: #ddd;
+    text-decoration: none;
+}
+.second-foot .second-foot-content p{
+    font-size: 12px;
+    color: #fff;
+    margin: 0 5px;
+}
+.second-foot .second-foot-content a{
+    font-size: 13px;
+    color: #fff;
+    text-decoration: none;
+}
+.second-foot .second-foot-content a:hover{
+    color: #ddd;
+    text-decoration: none;
+}
+@media screen and (max-width: 766px) {
+    .hero img{
+        height: 50px;
+    }
+    .hero h1{
+        font-size:30px;
+    }
+    .hero .foot-header{
+        margin-top:-35px;
+        font-size:10px;
+    }
+    .framework .title-framework h3{
+        font-size: 1.5rem;
+    }
+    .framework .card{
+        height:250px;
+        margin-top:0;
+    }
+    .framework .card .card-body img{
+        height: 150px;
+    }
+    .framework .content-text{
+        font-size: 10px;
+    }
+    .service .card .card-body .service-text h1{
+        font-size: 1rem;
+    }
+    .service .card .card-body .service-text p{
+        font-size: 13px;
+    }
+    .service .card .card-body img{
+        height: 90px;
+    }
+    .stories .card{
+        height:200px;
+    }
+    .stories .row{
+        padding-top:unset;
+        padding-bottom: unset;
+    }
+    .stories .card .card-body{
+        padding-top:50px;
+    }
+    .stories .card .card-body .stories-text h1{
+        font-size: 1rem;
+    }
+    .stories .card .card-body .stories-text button{
+        font-size: 10px;
+    }
+    .first-foot img{
+        margin-top:40px;
+    }
+  }
